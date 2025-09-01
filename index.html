@@ -1,0 +1,275 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Shyo ID - Payment</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"><style>:root{--bg-color:#FFFFFF;--primary-color:#0D0D0D;--accent-gradient:linear-gradient(135deg, #6A5AF9, #D66EFD);--success-color:#98FB98;--border-width:4px;--shadow-offset:8px;--border-radius:6px}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background-color:var(--bg-color);color:var(--primary-color);font-family:'Archivo',sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:2rem;overflow-x:hidden}.container{width:100%;max-width:550px;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative}.site-logo{width:100px;height:100px;margin-bottom:1.5rem;border-radius:var(--border-radius);border:var(--border-width) solid var(--primary-color);box-shadow:6px 6px 0 var(--primary-color)}.sparkle{position:absolute;top:15px;right:-10px;width:60px;height:60px;background:var(--accent-gradient);clip-path:polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%);animation:sparkle-sway 6s ease-in-out infinite}@keyframes sparkle-sway{0%,100%{transform:rotate(0deg) scale(1)}50%{transform:rotate(90deg) scale(1.2)}}h1{font-weight:900;font-size:clamp(2.2rem,9vw,3.5rem);line-height:1.1;text-transform:uppercase;letter-spacing:1px;margin-bottom:0;background:var(--accent-gradient);color:transparent;-webkit-background-clip:text;background-clip:text;padding:0 1rem}.title-underline{width:60%;max-width:250px;height:8px;background:var(--accent-gradient);border:var(--border-width) solid var(--primary-color);border-radius:var(--border-radius);box-shadow:6px 6px 0px var(--primary-color);margin-top:1.5rem;margin-bottom:3.5rem}.payment-container{width:100%;display:flex;flex-direction:column;gap:1.75rem}.payment-item{background-color:var(--bg-color);border:var(--border-width) solid var(--primary-color);border-radius:var(--border-radius);box-shadow:var(--shadow-offset) var(--shadow-offset) 0px var(--primary-color);transition:all .2s cubic-bezier(.68,-.55,.27,1.55)}.payment-item:hover{transform:translate(-4px,-4px);box-shadow:calc(var(--shadow-offset) + 4px) calc(var(--shadow-offset) + 4px) 0px var(--primary-color)}.payment-header{padding:1.25rem;font-size:1.25rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center}.arrow{width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid var(--primary-color);transition:transform .4s cubic-bezier(.68,-.55,.27,1.55)}.payment-item.active .arrow{transform:rotate(180deg)}.payment-content{max-height:0;overflow:hidden;transition:max-height .6s cubic-bezier(.25,1,.5,1),padding .6s ease;padding:0 1.25rem}.payment-item.active .payment-content{max-height:600px;padding:0 1.25rem 1.25rem 1.25rem}.payment-info{display:flex;flex-direction:column;align-items:center;gap:1.25rem;padding:1.5rem;background-color:#f8f8f8;border:2px solid var(--primary-color);border-radius:var(--border-radius)}.payment-number{font-family:'Roboto Mono',monospace;font-size:1.2rem;font-weight:500;word-break:break-all}.btn{font-family:'Archivo',sans-serif;font-weight:700;color:var(--primary-color);background-color:var(--bg-color);border:var(--border-width) solid var(--primary-color);border-radius:var(--border-radius);cursor:pointer;box-shadow:4px 4px 0px var(--primary-color);transition:all .15s ease-out;text-decoration:none;display:inline-block}.btn-large{font-size:1rem;padding:.75rem 1.5rem}.btn-small{font-size:.9rem;padding:.5rem 1rem}.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0px var(--primary-color)}.btn:active{transform:translate(4px,4px);box-shadow:none}@keyframes feedback-animation{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}.btn.feedback-active{background-color:var(--success-color);color:var(--primary-color);animation:feedback-animation .3s ease-in-out}.qris-image{max-width:250px;width:100%;height:auto;border:var(--border-width) solid var(--primary-color);border-radius:var(--border-radius);display:block;margin:0 auto;cursor:zoom-in;transition:transform .2s ease}.qris-image:hover{transform:scale(1.03)}.btn-contact{margin-top:3rem;background-image:var(--accent-gradient);color:var(--bg-color)}.modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,.85);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);justify-content:center;align-items:center;animation:fadeIn .3s ease}.modal-content{margin:auto;display:block;max-width:90%;max-height:90vh;border-radius:8px;animation:zoomIn .3s ease}.close-modal{position:absolute;top:20px;right:35px;color:#f1f1f1;font-size:40px;font-weight:bold;transition:.3s;cursor:pointer}.close-modal:hover,.close-modal:focus{color:#bbb;text-decoration:none}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Shyo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background:#0d0d0d;
+      color:#fff;
+      transition: background .3s, color .3s;
+    }
+    body.light { background:#f5f5f5; color:#0d0d0d; }
+
+    header {
+      position:fixed;top:0;left:0;width:100%;
+      background:#1a1a1a;color:#fff;padding:15px 20px;
+      display:flex;justify-content:space-between;align-items:center;
+      z-index:1000;
+    }
+    body.light header { background:#fff; color:#0d0d0d; }
+    header nav a {
+      color:inherit;text-decoration:none;margin:0 10px;
+      font-weight:600;transition:.3s;
+    }
+    header nav a:hover { color:#00bcd4; }
+
+    main { padding-top:80px; }
+    section { padding:60px 20px;text-align:center; }
+    h1,h2 { margin-bottom:20px; }
+
+    /* Loading */
+    #loading {
+      position:fixed;top:0;left:0;width:100%;height:100%;
+      background:#0d0d0d;display:flex;justify-content:center;align-items:center;
+      color:#fff;z-index:2000;font-size:22px;font-weight:600;
+    }
+    body.light #loading { background:#fff; color:#0d0d0d; }
+
+    /* Profile */
+    .profile-pic {
+      width:150px;height:150px;border-radius:50%;
+      margin:20px auto;overflow:hidden;border:4px solid #00bcd4;
+      animation: spin 6s linear infinite;
+    }
+    .profile-pic img { width:100%;height:100%;object-fit:cover; }
+    @keyframes spin { 0%{transform:rotate(0);}100%{transform:rotate(360deg);} }
+
+    /* Projects */
+    .projects,.catalog,.testimoni {
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;margin-top:30px;
+    }
+    .project-card,.product-card,.testi-card {
+      background:#1a1a1a;padding:20px;border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+      transition:.3s;
+    }
+    body.light .project-card,body.light .product-card,body.light .testi-card {
+      background:#fff;color:#0d0d0d;
+    }
+    .project-card:hover,.product-card:hover,.testi-card:hover { transform:translateY(-5px); }
+
+    /* Catalog */
+    .product-card img {
+      width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;
+    }
+    .price {display:block;font-weight:bold;color:#00bcd4;margin:10px 0;}
+    .buy-btn {
+      display:inline-block;padding:8px 15px;background:#00bcd4;
+      color:#fff;border-radius:6px;text-decoration:none;transition:.3s;
+    }
+    .buy-btn:hover { background:#0097a7; }
+
+    .filter-buttons { margin-bottom:20px; }
+    .filter-buttons button {
+      margin:5px;padding:8px 15px;border:none;cursor:pointer;
+      background:#00bcd4;color:#fff;border-radius:6px;font-weight:600;
+    }
+    .filter-buttons button:hover { background:#0097a7; }
+
+    /* Scroll to top */
+    #scrollTopBtn {
+      display:none;position:fixed;bottom:80px;right:20px;z-index:999;
+      background:#00bcd4;color:#fff;border:none;padding:10px 15px;
+      border-radius:50%;cursor:pointer;font-size:18px;
+    }
+    #scrollTopBtn:hover { background:#0097a7; }
+
+    /* Fade animation */
+    .fade-in {opacity:0;transform:translateY(20px);transition:all .8s ease;}
+    .fade-in.show {opacity:1;transform:translateY(0);}
+
+    /* Tombol Musik */
+    #musicBtn {
+      position:fixed;bottom:20px;left:20px;z-index:1000;
+      background:#00bcd4;color:#fff;border:none;
+      border-radius:50%;width:50px;height:50px;
+      font-size:20px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    }
+    #musicBtn:hover { background:#0097a7; }
+  </style>
+</head>
+<body>
+  <!-- Loading -->
+  <div id="loading">Loading...</div>
+
+  <!-- Music -->
+  <audio id="bgMusic" autoplay loop hidden>
+    <source src="https://files.catbox.moe/r2djj3.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicBtn">🔇</button>
+
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Skill</a></a>
+      <a href="#catalog">Catalog</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#contact">Kontak</a>
+      <button onclick="toggleTheme()">🌙/☀️</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="fade-in">
+      <div class="profile-pic">
+        <img src="https://files.catbox.moe/m87g8h.jpg" alt="Profile">
+      </div>
+      <h1>Halo, saya Shyo</h1>
+      <p>Developer Web, Bot WhatsApp, dan penyedia layanan digital.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="fade-in">
+      <h2>My Skill</h2>
+      <div class="projects">
+        <div class="project-card">HTML</div>
+        <div class="project-card">JAVASCRIPT</div>
+        <div class="project-card">CSS</div>
+      </div>
+    </section>
+
+    <!-- Catalog -->
+    <section id="catalog" class="fade-in">
+      <h2>Catalog Produk</h2>
+      <div class="filter-buttons">
+        <button onclick="filterCatalog('all')">Semua</button>
+        <button onclick="filterCatalog('panel')">Panel Run Bot</button>
+        <button onclick="filterCatalog('bot')">Bot WA</button>
+        <button onclick="filterCatalog('script')">Script bot</button>
+        <button onclick="filterCatalog('nokos')">Nokos Whatsapp</button>
+      </div>
+      <div class="catalog">
+        <div class="product-card panel">
+          <img src="https://files.catbox.moe/qlpr1o.jpg" alt="Panel">
+          <h3>Panel Pterodactyl</h3>
+          <p>Panel murah dan stabil untuk kebutuhan hosting.</p>
+          <span class="price">Rp15.000</span>
+          <a href="https://wa.me/6282176642989?text=Saya%20mau%20beli%20Panel" class="buy-btn">Beli Sekarang</a>
+        </div>
+        <div class="product-card bot">
+          <img src="https://files.catbox.moe/34q6wn.jpg" alt="Bot WA">
+          <h3>Bot WhatsApp</h3>
+          <p>Bot WA canggih dengan banyak fitur.</p>
+          <span class="price">Rp25.000</span>
+          <a href="https://wa.me/6282176642989?text=Saya%20mau%20beli%20Bot%20WA" class="buy-btn">Beli Sekarang</a>
+        </div>
+        <div class="product-card script">
+          <img src="https://files.catbox.moe/jz9tty.jpg" alt="Script">
+          <h3>Script Bpt</h3>
+          <p>Script handal untuk kebutuhan coding Anda.</p>
+          <span class="price">Rp50.000</span>
+          <a href="https://wa.me/6282176642989?text=Saya%20mau%20beli%20Script%20Premium" class="buy-btn">Beli Sekarang</a>
+        </div>
+        <div class="product-card nokos">
+          <img src="https://files.catbox.moe/memz3w.jpg" alt="Nokos">
+          <h3>Nokos</h3>
+          <p>Nomor kosong siap pakai untuk verifikasi.</p>
+          <span class="price">Rp5.000</span>
+          <a href="https://wa.me/6282176642989?text=Saya%20mau%20beli%20Nokos" class="buy-btn">Beli Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="fade-in">
+      <h2>Testimoni</h2>
+      <div class="testimoni">
+        <div class="testi-card">
+          <p>"Pelayanan cepat dan hasilnya mantap, recommended!"</p>
+          <h4>- Arya</h4>
+        </div>
+        <div class="testi-card">
+          <p>"Panelnya stabil + awet dan murah, worth it banget."</p>
+          <h4>- Caca</h4>
+        </div>
+        <div class="testi-card">
+          <p>"Bot WhatsApp nya bener-bener membantu bisnis saya."</p>
+          <h4>- Rina</h4>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in">
+      <h2>Kontak</h2>
+      <p>Hubungi saya via <a href="https://wa.me/6282176642989">WhatsApp</a></p>
+    </section>
+  </main>
+
+  <button id="scrollTopBtn">⬆️</button>
+
+  <script>
+    // Loading
+    window.onload = () => {
+      document.getElementById("loading").style.display = "none";
+    };
+
+    // Theme
+    function toggleTheme(){
+      document.body.classList.toggle("light");
+    }
+
+    // Catalog filter
+    function filterCatalog(category) {
+      const items = document.querySelectorAll(".product-card");
+      items.forEach(item => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    // Scroll to top
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = () => {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+      // Fade-in animation
+      document.querySelectorAll('.fade-in').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('show');
+        }
+      });
+    };
+    scrollBtn.onclick = () => { window.scrollTo({top:0,behavior:'smooth'}); };
+
+    // Music button
+    const music = document.getElementById("bgMusic");
+    const musicBtn = document.getElementById("musicBtn");
+    let isPlaying = true;
+
+    musicBtn.onclick = () => {
+      if (isPlaying) {
+        music.pause();
+        musicBtn.textContent = "🔇";
+      } else {
+        music.play();
+        musicBtn.textContent = "📢";
+      }
+      isPlaying = !isPlaying;
+    };
+  </script>
+</body>
+</html>

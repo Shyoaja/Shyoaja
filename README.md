@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm ShyoCode</h1>
-<h3 align="center">A passionate developer from Indonesia</h3>
+<h3 align="center">I'm a beginner from Indonesia who likes coding while listening to music on Spotify.</h3>
 
 <p align="center">
   <img src="https://files.catbox.moe/38z3bm.jpg" alt="profile" width="686" height="412" style="border-radius:20px;"/>
@@ -8,7 +8,7 @@
 ---
 # 💻 Website Me For Tup Ap Games 
 
-- **Link:** [Nekohime](https://neko.hime.my.id)
+- **Link:** [Nekohime Chan](https://neko.hime.my.id)
 
 ---
 

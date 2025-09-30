@@ -2,7 +2,7 @@
 <p align="center">
 
   <!-- Profile image -->
-  <img src="https://raw.githubusercontent.com/Shyoaja/Shyoaja/main/assets/profile.jpg" alt="Shyoaja" width="160" height="160"
+  <img src="https://files.catbox.moe/38z3bm.jpg" alt="Shyoaja" width="160" height="160"
        style="border-radius:50%; object-fit:cover; border:4px solid rgba(255,255,255,0.08); box-shadow:0 8px 30px rgba(0,0,0,0.25);" />
 
   <!-- Name & short tagline -->

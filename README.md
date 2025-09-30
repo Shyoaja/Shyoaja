@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm ShyoCode</h1>
+<h1 align="center">Hello Everyone 👋, I'm ShyoCode✨</h1>
 <h3 align="center">I'm a beginner from Indonesia who likes coding while listening to music on Spotify.</h3>
 
 <p align="center">

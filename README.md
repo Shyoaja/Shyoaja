@@ -1,9 +1,14 @@
-<h1 align="center">Hi 👋, I'm Shyoaja</h1>
+<h1 align="center">Hi 👋, I'm ShyoCode</h1>
 <h3 align="center">A passionate developer from Indonesia</h3>
 
 <p align="center">
   <img src="https://files.catbox.moe/38z3bm.jpg" alt="profile" width="686" height="412" style="border-radius:20px;"/>
 </p>
+
+---
+# 💻 Website Me For Tup Ap Games 
+
+- **Link:** [Nekohime](https://neko.hime.my.id)
 
 ---
 
@@ -27,10 +32,12 @@
 
 ---
 
-## 📮 Reach me  
+## 📮 Follow My Social Media 
 
 - **Email:** [shyoaja@gmail.com](mailto:shyoaja@gmail.com)  
-- **YouTube:** [ShyoOFFC](https://www.youtube.com/@ShyoOFFC)  
+- **YouTube:** [ShyoOFFC](https://www.youtube.com/@ShyoOFFC)
+- **Instagram:** [Nekohime](https://Instagram.com//nekohime_nc)
+- **Tiktok:** [Shyo](https://tiktok.com//@shyonotsepuh) 
 - **Portfolio:** [shyoproto.vercel.app](https://shyoproto.vercel.app)  
 
 ---

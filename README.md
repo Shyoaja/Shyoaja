@@ -8,7 +8,7 @@
 <p align="center">
 
   <!-- Profile image (replace URL with your repo path like /assets/profile.jpg or external link) -->
-  <img src="https://raw.githubusercontent.com/USERNAME/REPO/main/assets/profile.jpg" alt="Your Name" width="160" height="160"
+  <img src="https://raw.githubusercontent.com/Shyoaja/REPO/main/assets/profile.jpg" alt="Your Name" width="160" height="160"
        style="border-radius:50%; object-fit:cover; border:4px solid rgba(255,255,255,0.08); box-shadow:0 8px 30px rgba(0,0,0,0.25);" />
 
   <!-- Name & short tagline -->
@@ -20,9 +20,9 @@
 
   <!-- Social badges -->
   <p>
-    <a href="https://github.com/USERNAME"><img alt="GitHub followers" src="https://img.shields.io/github/followers/USERNAME?label=Follow&style=social" /></a>
-    <a href="https://twitter.com/TWITTER_HANDLE"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-@TWITTER_HANDLE-1DA1F2?style=flat&logo=twitter&logoColor=white" /></a>
-    <a href="mailto:you@example.com"><img alt="Email" src="https://img.shields.io/badge/Email-you%40example.com-D14836?style=flat&logo=gmail&logoColor=white" /></a>
+    <a href="https://github.com/Shyoaja"><img alt="GitHub followers" src="https://img.shields.io/github/followers/USERNAME?label=Follow&style=social" /></a>
+    <a href="https://twitter.com/Shyo"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-@TWITTER_HANDLE-1DA1F2?style=flat&logo=twitter&logoColor=white" /></a>
+    <a href="mailto:shyoaja@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-you%40example.com-D14836?style=flat&logo=gmail&logoColor=white" /></a>
   </p>
 
   <!-- Quick stats (GitHub Readme stats images) -->
